@@ -14,14 +14,4 @@
 			});
 		}
 	});
-	$(function(){
-		var string = "<h4>Hello {name},<\/h4> <p>This is a test text from {source}.<\/p>",
-			obj = {name: 'Mike', source : 'The insider'},
-			obj2= {name: 'Jake', source : 'The snitch'},
-			arr=[obj,obj2]
-		$('<div>').template(obj,string).appendTo('body')
-		$('<hr>').appendTo('body')
-		$('<div>').template(arr,string).appendTo('body')
-		$('h1').template({author:'Jake'})
-	});
 }(jQuery));
