@@ -1,0 +1,25 @@
+h1. jQuery Template
+
+<p>
+The jQuery-template plugin is a simple jQuery plugin that can be used in doing client side templateing(as I like to call it.).
+</p>
+
+h2. What does it do
+
+<p>
+	The jQuery-template plugin is simple to use and to describe what it does I better show you.
+So if I have the following string:
+<code>var string = "This is from {source} and author {author}"</code>
+Call the template method
+<code>$('span').template({'source' : 'The insider', 'author' : 'Juno'})</code>
+The above code will replace the placeholders {source} and {author} with the values from the keys with the same name from the given object and the result
+will be:
+<code><span>This is from The insider and author Juno</span></code>
+</p>
+<p>
+	It is as simple as that. Its is not much but it is a really nice plugin and it helped me when handling small jsons and displaying in a readble mode
+	for example in a tooltip.
+</p>
+<p>
+	For more examples check the test-template.js.
+</p>
